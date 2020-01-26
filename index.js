@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 const puppeteer = require("puppeteer");
+const chalk = require("chalk");
 
 const run = async () => {
   const currency = process.argv[2] || "BRL";
@@ -14,7 +15,10 @@ const run = async () => {
     el => el[1].value
   );
 
-  console.log(convertedNumber);
+  console.log(chalk.bold.blue("USD ") + 1);
+  console.log(chalk.bold.green(currency) + " " + convertedNumber);
+  console.log("\n");
+  console.log("🤙");
 
   await browser.close();
 };

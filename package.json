@@ -5,6 +5,7 @@
     "dolar-to": "index.js"
   },
   "dependencies": {
+    "chalk": "^3.0.0",
     "puppeteer": "^2.0.0"
   }
 }
