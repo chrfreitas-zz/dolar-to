@@ -1,0 +1,10 @@
+{
+  "name": "dolar-to",
+  "version": "0.0.1",
+  "bin": {
+    "dolar-to": "index.js"
+  },
+  "dependencies": {
+    "puppeteer": "^2.0.0"
+  }
+}
